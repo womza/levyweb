@@ -1,3 +1,11 @@
+/*
+
+THIS FILE IS OVERWRITTEN EVERY TIME YOU UPDATE THE PLUGIN.
+USE THE CUSOTM CSS OPTION IN THE SUBSCRIPTION SETTING PANEL FOR YOUR
+CUSTOM CSS RULES.
+
+*/
+
 .tnp-subscription {
     font-size: 13px;
     display: block;
@@ -234,12 +242,12 @@ tnp-profile form .tnp-field label {
     color: #444;
     font-size: 14px;
     box-sizing: border-box;
+    border-radius: 0px;
 }
 
 .tnp-subscription-minimal input.tnp-submit {
     width: 29%;
     box-sizing: border-box;
-    padding: 10px;
     display: inline-block;
     border: 1px;
     border-color: #ddd;
@@ -247,6 +255,7 @@ tnp-profile form .tnp-field label {
     color: #fff;
     font-size: 14px;
     box-sizing: border-box;
+    border-radius: 0px;
 }
 
 

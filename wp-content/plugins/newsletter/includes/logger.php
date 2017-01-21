@@ -32,7 +32,7 @@ class NewsletterLogger {
             $this->level = self::NONE;
         }
 
-        $this->file = NEWSLETTER_LOG_DIR . '/' . $module . '-' . $secret . '.txt';
+        $this->file = NEWSLETTER_LOG_DIR . '/' . $module . '-' . date('Y-m') . '-' . $secret . '.txt';
     }
 
     function log($text, $level = self::ERROR) {

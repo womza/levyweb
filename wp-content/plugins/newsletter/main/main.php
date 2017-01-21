@@ -1,5 +1,6 @@
 <?php
-if (!defined('ABSPATH')) exit;
+if (!defined('ABSPATH'))
+    exit;
 
 @include_once NEWSLETTER_INCLUDES_DIR . '/controls.php';
 $controls = new NewsletterControls();
@@ -47,13 +48,16 @@ if (!$controls->is_action()) {
         if (!$newsletter->is_email($controls->data['reply_to'], true)) {
             $controls->errors .= __('Reply to email is not correct.', 'newsletter') . '<br>';
         }
-        
+
         $controls->data['contract_key'] = trim($controls->data['contract_key']);
-        
+
         if (empty($controls->errors)) {
             $module->merge_options($controls->data);
             $controls->messages .= __('Saved.', 'newsletter');
         }
+        
+        update_option('newsletter_log_level', $controls->data['log_level']);
+        
         $module->hook_newsletter_extension_versions(true);
     }
 }
@@ -78,6 +82,19 @@ if (!empty($controls->data['contract_key'])) {
     $module->merge_options($controls->data);
 }
 
+
+$return_path = $module->options['return_path'];
+if (!empty($return_path)) {
+    list($return_path_local, $return_path_domain) = explode('@', $return_path);
+
+    $sender = $module->options['sender_email'];
+    list($sender_local, $sender_domain) = explode('@', $sender);
+
+
+    if ($sender_domain != $return_path_domain) {
+        $controls->messages .= '<br><br>Your Return Path domain is different from your Sender domain. Providers may require them to be identical';
+    }
+}
 ?>
 
 <div class="wrap" id="tnp-wrap">
@@ -223,6 +240,25 @@ if (!empty($controls->data['contract_key'])) {
                             <th>Enable access to blog editors?</th>
                             <td>
                                 <?php $controls->yesno('editor'); ?>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                Log level
+                            </td>
+                            <td>
+                                <?php $controls->log_level('log_level'); ?>
+                            </td>
+                        </tr>
+
+                        <tr valign="top">
+                            <th>Debug mode</th>
+                            <td>
+                                <?php $controls->yesno('debug', 40); ?>
+                                <p class="description">
+                                    In debug mode Newsletter intercepts PHP errors. To be used only by the support team. 
+                                </p>
                             </td>
                         </tr>
 

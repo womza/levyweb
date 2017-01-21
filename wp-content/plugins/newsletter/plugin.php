@@ -4,7 +4,7 @@
   Plugin Name: Newsletter
   Plugin URI: http://www.thenewsletterplugin.com/plugins/newsletter
   Description: Newsletter is a cool plugin to create your own subscriber list, to send newsletters, to build your business. <strong>Before update give a look to <a href="http://www.thenewsletterplugin.com/category/release">this page</a> to know what's changed.</strong>
-  Version: 4.7.5
+  Version: 4.7.6
   Author: Stefano Lissa & The Newsletter Team
   Author URI: http://www.thenewsletterplugin.com
   Disclaimer: Use at your own risk. No warranty expressed or implied is provided.
@@ -14,7 +14,7 @@
  */
 
 // Used as dummy parameter on css and js links
-define('NEWSLETTER_VERSION', '4.7.5');
+define('NEWSLETTER_VERSION', '4.7.6');
 
 global $wpdb, $newsletter;
 
@@ -369,6 +369,7 @@ class Newsletter extends NewsletterModule {
         $this->add_menu_page('index', 'Dashboard');
         $this->add_menu_page('main', 'Settings and More');
         $this->add_admin_page('smtp', 'SMTP');
+        $this->add_admin_page('status', 'Status');
         $this->add_admin_page('info', 'Company info');
         $this->add_admin_page('diagnostic', 'Diagnostic');
         $this->add_admin_page('startup', 'Quick Startup');
@@ -401,6 +402,11 @@ class Newsletter extends NewsletterModule {
 
     function hook_init() {
         global $cache_stop, $hyper_cache_stop, $wpdb;
+        
+        if (isset($this->options['debug']) && $this->options['debug'] == 1) {
+            ini_set('log_errors', 1);
+            ini_set('error_log', WP_CONTENT_DIR . '/logs/newsletter/php-' . date('Y-m') . '-' . get_option('newsletter_logger_secret') . '.txt');
+        }
 
         if (is_admin()) {
             if ($this->is_admin_page()) {
@@ -442,6 +448,11 @@ class Newsletter extends NewsletterModule {
             $options_followup = get_option('newsletter_followup');
             $this->message = $options_followup['unsubscribed_text'];
             return;
+        }
+        
+        if ($action == 'test') {
+            echo 'ok';
+            die();
         }
     }
 

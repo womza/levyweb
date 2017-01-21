@@ -1324,7 +1324,11 @@ class NewsletterSubscription extends NewsletterModule {
         }
 
         if ($referrer != 'widget') {
-            $buffer .= '<div class="tnp tnp-subscription">' . "\n";
+            if (isset($attrs['class'])) {
+                $buffer .= '<div class="tnp tnp-subscription ' . $attrs['class'] . '">' . "\n";
+            } else {
+                $buffer .= '<div class="tnp tnp-subscription">' . "\n";
+            }
         }
         $buffer .= '<form method="post" action="' . esc_attr($action) . '" onsubmit="return newsletter_check(this)">' . "\n\n";
 

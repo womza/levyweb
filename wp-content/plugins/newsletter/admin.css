@@ -1,7 +1,7 @@
 
 @import url(//fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:700);
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 @import url(css/dropdown.css);
 @import url(css/jquery-ui/jquery-ui.css);
 @import url(statistics/css/tnp-statistics.css);
@@ -104,6 +104,10 @@
     background: none;
     border: 0;
     border-bottom: 1px solid #ddd;
+}
+
+.ui-tabs-panel {
+    padding: 15px!important;
 }
 
 /* HEADER *********************************************************************/
@@ -717,7 +721,7 @@ p.description {
 }
 
 #tnp-body h3 {
-    margin-top: 15px;
+    margin-top: 25px;
     clear: both;
 }
 
@@ -1123,3 +1127,84 @@ span.wp-media-buttons-icon:before {
 .tnp-chart {
     border: 1px solid #eee;
 }  
+
+.tnp-db-table {
+    width: auto;
+    background-color: #fff; 
+}
+
+.tnp-db-table thead {
+    border-bottom: 1px solid #eee;
+}
+
+.tnp-db-table th {
+    font-weight: bold;
+}
+
+.tnp-db-table td, .tnp-db-table th {
+    padding: 3px;
+    font-family: monospace;
+    border: 0;
+}
+
+/* STATUS PANEL */
+
+.tnp-main-status h3, .tnp-main-status h4 {
+    color: #fff;
+}
+
+#tnp-status-table .tnp-ok {
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    background-color: #27AE60;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+#tnp-status-table .tnp-ko {
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    background-color: #E74C41;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+#tnp-status-table .tnp-maybe {
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    background-color: #F1C40F;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+.tnp-main-status .tnp-log-files li {
+    padding-left: 15px;
+}
+
+.tnp-main-status .tnp-log-files li, .tnp-main-status .tnp-log-files li a {
+    color: #fff;
+}
+
+.tnp-main-status .tnp-log-files .tnp-log-size {
+    font-style: italic;
+}
+
+table.widefat {
+    border: 0;
+    box-shadow: none;
+}
+
+#tnp-status-table tbody tr:nth-child(2n+1) {
+    background-color: #ECF0F1;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+#tnp-parameters-table tbody tr:nth-child(2n+1) {
+    background-color: #ECF0F1;
+    border-radius: 2px;
+    margin: 5px;
+}
