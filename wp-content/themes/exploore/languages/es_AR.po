@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2017-01-08 22:18-0600\n"
-"PO-Revision-Date: 2017-01-08 22:19-0600\n"
+"PO-Revision-Date: 2017-01-22 15:45-0600\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -551,7 +551,7 @@ msgid "Enter breadcrumb label for accommodation location page."
 msgstr ""
 
 msgid "Locations"
-msgstr ""
+msgstr "Ubicaciones"
 
 msgid "Tours"
 msgstr ""
@@ -980,7 +980,7 @@ msgid "Tour Filter By"
 msgstr ""
 
 msgid "Categories"
-msgstr ""
+msgstr "Categorias"
 
 msgid "Find Tour Box"
 msgstr ""
@@ -989,7 +989,7 @@ msgid "Price"
 msgstr ""
 
 msgid "Review Rating"
-msgstr ""
+msgstr "Calificación"
 
 msgid "Price Filter Max Value"
 msgstr ""
@@ -1686,7 +1686,7 @@ msgid "Send Message"
 msgstr ""
 
 msgid "SEND NOW"
-msgstr ""
+msgstr "Enviar ahora"
 
 msgid "Main Navigation"
 msgstr ""
@@ -2041,10 +2041,10 @@ msgid "Posts tagged"
 msgstr ""
 
 msgid "Search results for"
-msgstr ""
+msgstr "Resultados para"
 
 msgid "Page"
-msgstr ""
+msgstr "Página"
 
 msgid "Categories:"
 msgstr ""
@@ -2094,10 +2094,10 @@ msgid "Login"
 msgstr ""
 
 msgid "Register"
-msgstr ""
+msgstr "Registrar"
 
 msgid "Search results"
-msgstr ""
+msgstr "Buscar resultados"
 
 msgid "F Y"
 msgstr ""
@@ -2112,7 +2112,7 @@ msgid "Home"
 msgstr ""
 
 msgid "Search..."
-msgstr ""
+msgstr "Buscar..."
 
 msgid "share to :"
 msgstr ""
@@ -2121,13 +2121,13 @@ msgid "Tags:"
 msgstr ""
 
 msgid "All"
-msgstr ""
+msgstr "Todo"
 
 msgid "Posted by:"
 msgstr ""
 
 msgid "View more"
-msgstr ""
+msgstr "Ver mas"
 
 msgid "login"
 msgstr ""
@@ -2706,7 +2706,7 @@ msgid "Title:"
 msgstr ""
 
 msgid "Contact form:"
-msgstr ""
+msgstr "Formulario de Contacto"
 
 msgid "A list image of tour or accommodation post type."
 msgstr ""
@@ -2808,7 +2808,7 @@ msgid "Enter description to display on newsletter form."
 msgstr ""
 
 msgid "Email address"
-msgstr ""
+msgstr "Escribí tu mail"
 
 msgid "A recent posts list."
 msgstr ""
@@ -3209,7 +3209,7 @@ msgid "Reply"
 msgstr ""
 
 msgid "We can&rsquo;t find what you&rsquo;re looking for!"
-msgstr ""
+msgstr "¡No podemos encontrar lo que buscas!"
 
 msgid "Ready to publish your first post?"
 msgstr ""
@@ -3218,7 +3218,7 @@ msgid "Get started here"
 msgstr ""
 
 msgid "Please try again with different keywords."
-msgstr ""
+msgstr "Intente de nuevo con otras palabras."
 
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
@@ -3229,7 +3229,7 @@ msgid "Helpful Links"
 msgstr ""
 
 msgid "Read more"
-msgstr ""
+msgstr "Leer mas"
 
 msgid "Pages:"
 msgstr ""
@@ -3247,16 +3247,16 @@ msgid "Cabin Types"
 msgstr ""
 
 msgid "Book Now"
-msgstr ""
+msgstr "Reservar Ahora"
 
 msgid "Hotel Overview"
 msgstr ""
 
 msgid "Contact Us"
-msgstr ""
+msgstr "Contactanos"
 
 msgid "Open Map"
-msgstr ""
+msgstr "Abrir mapa"
 
 msgid "special offer"
 msgstr ""
@@ -3386,7 +3386,7 @@ msgid "Post navigation"
 msgstr ""
 
 msgid "Search here..."
-msgstr ""
+msgstr "Buscar aqui..."
 
 msgid "Product"
 msgstr ""

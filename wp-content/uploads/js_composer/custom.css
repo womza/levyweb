@@ -1,0 +1,12 @@
+.tour-view-main .title-style-2, .tour-view-main .schedule-block, .timeline-container .timeline-title, .timeline-container .timeline-point {
+    display:none;
+}
+.tour-view-main .entry-content.margin-top70 {
+    margin-top:0;
+}
+.tour-view-main.padding-top {
+    padding-top:30px;
+}
+.timeline-container .timeline:before, .timeline-container .timeline-point:before, .timeline-container .timeline-custom-col:before {
+    background:none;
+}
