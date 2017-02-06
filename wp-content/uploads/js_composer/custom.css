@@ -1,4 +1,5 @@
-.tour-view-main .title-style-2, .tour-view-main .schedule-block, .timeline-container .timeline-title, .timeline-container .timeline-point {
+.tour-view-main .title-style-2, .tour-view-main .schedule-block, .timeline-container .timeline-title, .timeline-container .timeline-point,
+.tours-result-content .tours-list .slzexploore_tour .group-btn-tours, .tour-view-main .wrapper-btn {
     display:none;
 }
 .tour-view-main .entry-content.margin-top70 {
