@@ -313,7 +313,7 @@ class Slzexploore_Core_Team extends Slzexploore_Core_Custom_Post_Model {
 		$defaults = array(
 			'title_format'             => '<a href="%2$s" class="title">%1$s</a>',
 			'category_format'          => '<p class="job">%1$s</p>',
-			'image_format'             => '<a class="%3$s" href="%2$s">%1$s</a>',
+			'image_format'             => '<a class="%3$s">%1$s</a>', // '<a class="%3$s" href="%2$s">%1$s</a>',
 			'description_format'       => '%1$s',
 			'position_format'          => '%1$s',
 			'address_format'           => '<li class="main-list"><i class="icons fa fa-map-marker"></i><span class="link">%1$s</span></li>',
