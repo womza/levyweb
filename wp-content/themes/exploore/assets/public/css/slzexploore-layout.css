@@ -272,19 +272,19 @@ body {
     .layout-boxed .travelers .traveler-list .slick-prev {
       left: -28px;
     }
-    .layout-boxed .travelers .traveler-list .slick-prev, 
+    .layout-boxed .travelers .traveler-list .slick-prev,
     .layout-boxed .travelers .traveler-list .slick-next {
       width: 40px;
       height: 40px;
     }
-    .layout-boxed .travelers .traveler-list .slick-prev:before, 
+    .layout-boxed .travelers .traveler-list .slick-prev:before,
     .layout-boxed .travelers .traveler-list .slick-next:before {
       line-height: 36px;
     }
     .layout-boxed .banner-sale-2 .banner-left {
       padding-left: 13%;
     }
-    .layout-boxed .banner-sale-2 .title-box .title-1 {  
+    .layout-boxed .banner-sale-2 .title-box .title-1 {
       font-size: 60px;
     }
     .layout-boxed .text-salebox {
@@ -295,6 +295,9 @@ body {
     }
     .timeline-hotel-view .timeline-block:last-child .timeline-point:after {
       max-height: 100px;
+    }
+    .header-01 .header-main .logo .header-logo img {
+      max-width: auto;
     }
 }
 .adminbar-on header .header-main.header-fixed {
@@ -1786,7 +1789,7 @@ a:hover {
 .sidebar .contact-us-widget .info-list > div span,
 .sidebar .contact-us-widget .info-list > div .link {
   color: #555e69;
-} 
+}
 .contact-us-widget .info-list > div .link {
   display: inline;
 }
@@ -2264,7 +2267,7 @@ a:hover {
  .tab-search-long .find-widget .place .select2,
 .tab-search-condensed .find-widget .place .select2 {
   width: 100% !important;
-} 
+}
 .tab-search-long .find-widget .place .select2 .select2-selection,
 .tab-search-condensed .find-widget .place .select2 .select2-selection,
 .slz-search-widget .find-widget .content-widget .select2 .select2-selection {
