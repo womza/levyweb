@@ -11,3 +11,10 @@
 .timeline-container .timeline:before, .timeline-container .timeline-point:before, .timeline-container .timeline-custom-col:before {
     background:none;
 }
+.homepage-default .group-title .sub-banner .boder {
+    width:0 !important;
+}
+.homepage-banner-content .group-title .sub-banner {
+    display:block;
+    text-align:center;
+}
