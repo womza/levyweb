@@ -18,3 +18,16 @@
     display:block;
     text-align:center;
 }
+.slz-shortcode .contact form.contact-form select, .slz-shortcode .contact form.contact-form textarea, .slz-shortcode .contact form.contact-form input {
+    border:1px solid #BCCE00;
+}
+@media screen and (max-height: 650px) {
+    .homepage-default .group-title {
+        padding-top:150px;
+    }
+}
+@media screen and (max-height: 570px) {
+    .homepage-default .group-title {
+        padding-top:200px;
+    }
+}
